@@ -1,0 +1,5 @@
+name = "Jiwook Yoo"
+SID = "25443504"
+email = "jiwooky@berkeley.edu"
+github_name = "jiwooky"
+status = "enrolled"
