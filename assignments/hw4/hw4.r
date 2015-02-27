@@ -172,5 +172,10 @@ else
 }
 return(var)
 }
-aa= samplingVarEst(x, bootstrap)
+type1 = "hello"
+type2 = "bootstrap"
+type3 = "jackknife"
+a1 = samplingVarEst(x, type1)
+a2 = samplingVarEst(x, type2)
+a3 = samplingVarEst(x, type3)
 
