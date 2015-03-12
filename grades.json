@@ -1,0 +1,23 @@
+{
+    "email": "jiwooky@berkeley.edu", 
+    "github_name": "jiwooky", 
+    "grades": {
+        "hw1": {
+            "note": "", 
+            "hash": "06fcb81322e17edf40c609305991f352075c0570", 
+            "earned": 0, 
+            "possible": 20, 
+            "penalty": 0, 
+            "parts": {
+                "hw1": {
+                    "possible": 20, 
+                    "earned": 0
+                }
+            }
+        }
+    }, 
+    "login": "jiwooky", 
+    "name": "Jiwook Yoo", 
+    "status": "enrolled", 
+    "url": "git@github.com:jiwooky/stat133.git"
+}
