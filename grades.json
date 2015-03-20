@@ -19,5 +19,7 @@
     "login": "jiwooky", 
     "name": "Jiwook Yoo", 
     "status": "enrolled", 
-    "url": "git@github.com:jiwooky/stat133.git"
+
+    "url": "git@github.com:jiwooky/stat133.git", 
+    "section": "lab5"
 }
