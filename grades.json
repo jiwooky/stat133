@@ -14,12 +14,24 @@
                     "earned": 0
                 }
             }
+        }, 
+        "hw4": {
+            "note": "", 
+            "hash": "09028587469c2a83456c8b4cca5dd2d5c801b42d", 
+            "earned": 1, 
+            "possible": 20, 
+            "penalty": 0, 
+            "parts": {
+                "hw4": {
+                    "possible": 20, 
+                    "earned": 1
+                }
+            }
         }
     }, 
     "login": "jiwooky", 
     "name": "Jiwook Yoo", 
     "status": "enrolled", 
-
     "url": "git@github.com:jiwooky/stat133.git", 
     "section": "lab5"
 }
