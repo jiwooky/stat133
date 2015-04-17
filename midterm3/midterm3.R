@@ -9,7 +9,10 @@
 #   <num.brac>: an integer indicating how many elements of <chvec> contain the "["
 #     symbol. For example: numBracElements(c('digit', '[:digit:]', '[]')) should return 2
 
-
+numBracElements = function(chvec){
+  vec = grep("\\[", chvec)
+  return(length(vec))
+}
 
 
 # Write a function called maxDigits that return the maximum of all (single) digits in
@@ -20,6 +23,16 @@
 # and return the following
 #   <total>: A single number (the maximum of all digits in chvec)
 
+maxDigits = function(chvec){
+  chvec = tolower(chvec)
+  chvec = gsub('[a-z]', replacement = "", chvec)
+  if((length(chvec) =< 1) && (is.na(as.numeric(chvec)))){
+    return(0)}
+  else{
+    split = strsplit(chvec, "")
+    num = (unlist(lapply(split, max)))
+    return(as.numeric(num))}
+}
 
 
 # Some test cases:
@@ -30,7 +43,7 @@ all.equal(maxDigits("abcdefg"), 0)
 
 # Write a function called hisToHer that converts every instance of 
 # him in a string to her; every instance of he to she and every instance 
-# of his to hers. You can assume everything is lower case. Be careful not 
+# of his to her. You can assume everything is lower case. Be careful not 
 # to replace words that contain him/he/his (eg you don't want to
 # replace the with ther). Your function should take the argument
 #   <chvec>: A character vector
@@ -38,6 +51,20 @@ all.equal(maxDigits("abcdefg"), 0)
 # and return
 #   <herchvec>: The same character vector with the required substitutions.
 
+hisToHer = function(chvec){
+  chvec = gsub('[:blank:]his[:blank:]', " her ", chvec)
+  chvec = gsub('^his[:blank:]', "her ", chvec)
+  chvec = gsub('[:blank]his$', " her", chvec)
+  
+  chvec = gsub('[:blank:]he[:blank:]', " she ", chvec)
+  chvec = gsub('^he[:blank:]', "she ", chvec)
+  chvec = gsub('[:blank]he$', " she", chvec)
+  
+  chvec = gsub('[:blank:]him[:blank:]', " her ", chvec)
+  chvec = gsub('^him[:blank:]', "her ", chvec)
+  chvec = gsub('[:blank]him$', " her", chvec)
+  return(chvec)
+}
 
 # A test case
 all.equal(
@@ -58,4 +85,3 @@ all.equal(
 #  <letter> The most common letter or letters in the string.
 # For example mostCommonLetter("aabbccccdddd") should return 
 # [1] "c" "d"
-
