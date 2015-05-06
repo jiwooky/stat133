@@ -1,0 +1,7 @@
+w: wrong permutation  -1
+l: should be a list, not dataframe  -1
+t: wrong table  -2
+Plot: use color options  -2
+cache: return should be vectors, not lists. Use sapply or unlist  -2
+
+Score: 25/33
