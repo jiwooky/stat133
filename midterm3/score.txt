@@ -1,0 +1,16 @@
+Total: 15/20
+
+Function 1
+5/5
+
+Function 2
+5/5
+
+Function 3
+5/5
+Although one edge case is missed hisToHer(“he”)
+
+Function 4
+0/5
+Not attempted
+
