@@ -203,7 +203,7 @@ abline(v= 2.1)
 par(mfrow = c(1,2))
 plot(WorldBank$fertility.rate[WorldBank$year == 1960], WorldBank$life.expectancy[WorldBank$year == 1960], pch = ".", col = as.numeric(WorldBank$region[WorldBank$year == 1960]),
      ylab = "life expectancy", xlab = "fertility")
-plot(WorldBank$fertility.rate[WorldBank$year == 2014], WorldBank$life.expectancy[WorldBank$year == 2014], pch = ".", col = as.numeric(WorldBank$region[WorldBank$year == 2014]),
+plot(WorldBank$fertility.rate[WorldBank$year == 2013], WorldBank$life.expectancy[WorldBank$year == 2013], pch = ".", col = as.numeric(WorldBank$region[WorldBank$year == 2013]),
      ylab = "life expectancy", xlab = "fertility")
 # [4 pts]
 # Make a histogram of GDP only for observations where the lending rating is "IDA"
@@ -319,8 +319,8 @@ standardizeVar = function(m, cols){
     for(i in 1:ncol(m)){
       means = mean(m[ ,i])
       st = sd(m[ , i])}
-    for(a in 1:ncol(m){
-      for(b in 1:nrow(m){
+    for(a in 1:ncol(m)){#Andy
+      for(b in 1:nrow(m)){#ANdy
         m[b,a] = (m[b, a] - means[a])/st[a]
       }
     }
@@ -331,8 +331,8 @@ standardizeVar = function(m, cols){
     for(i in 1:nrow(m)){
       means = mean(m[i, ])
       st = sd(m[i, ])}
-    for(a in 1:ncol(m){
-      for(b in 1:nrow(m){
+    for(a in 1:ncol(m)){
+      for(b in 1:nrow(m)){
        m[b,a] = (m[b, a] - means[b])/s[b]
       }
     }
@@ -423,10 +423,10 @@ NumJackpot = function(k, B){
 
 # For B = 5000 and each value of k = 10000, 50000, 100000, 500000
 # Plot a histogram of the output from NumJackpot (i.e. four histograms)
-hist(NumJackpot(10000, 5000))
-hist(NumJackpot(50000, 5000))
-hist(NumJackpot(100000, 5000))
-hist(NumJackpot(50000, 5000))
+hist(NumJackpot(100, 50))
+hist(NumJackpot(500, 50))
+hist(NumJackpot(1000, 50))
+hist(NumJackpot(500, 50))
 #################################################################
 ##### PART VI : string manipulation and regular expressions [20 pts]
 
