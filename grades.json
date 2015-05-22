@@ -44,6 +44,19 @@
                     "earned": 0
                 }
             }
+        }, 
+        "midterm4": {
+            "note": "", 
+            "hash": "9d1fa159b6e01c93916571aa7759814f679332bd", 
+            "earned": 29, 
+            "possible": 27, 
+            "penalty": 0, 
+            "parts": {
+                "midterm4": {
+                    "possible": 30, 
+                    "earned": 29
+                }
+            }
         }
     }, 
     "login": "jiwooky", 
