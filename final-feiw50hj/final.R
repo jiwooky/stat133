@@ -481,6 +481,8 @@ for(z in 1:length(dna)){
   if(length(dna[z])%%3 == !0)
    dna[-z]
   }
-dna2 = unlist(dna2)
+# inga: this line causes an error, dna2 has not been defined - but dna has also not been updated!!
+#dna2 = unlist(dna2)
+
 #################################################################
 
