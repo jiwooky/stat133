@@ -421,4 +421,4 @@ barplot(athTab2[ , orderSport], beside = TRUE, las = 3, cex.names = 1, ylim = c(
 # This was the final version of the 4th plot.
 
 # You are DONE.
-# Hope you had fun making increasingly complex and attractive plots with R.
+                                        # Hope you had fun making increasingly complex and attractive plots with R.
