@@ -4,14 +4,14 @@
     "grades": {
         "hw1": {
             "note": "", 
-            "hash": "06fcb81322e17edf40c609305991f352075c0570", 
-            "earned": 0, 
+            "hash": "2ace00f496bea88044e0fbd8c8847ab614fb7912", 
+            "earned": 20, 
             "possible": 20, 
             "penalty": 0, 
             "parts": {
                 "hw1": {
                     "possible": 20, 
-                    "earned": 0
+                    "earned": 20
                 }
             }
         }, 
